@@ -23,7 +23,7 @@ start_link(Config) ->
   gen_server:start_link({local, ?MODULE}, ?MODULE, Config, []).
 
 init(Config) ->
-  Nick = eric_config:get(nick, "eric", Config),
+  Nick = eric_config:get(nick, "Innaky_", Config),
   Username = eric_config:get(username, Config),
   Realname = eric_config:get(realname, Config),
   Host = eric_config:get(host, Config),
